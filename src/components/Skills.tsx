@@ -4,75 +4,75 @@ import { Brain, Code, Database, Cloud, Cpu, Users } from "lucide-react";
 
 const skillCategories = [
   {
-    icon: Brain,
-    title: "AI/ML & Data Science",
-    skills: [
-      { name: "Python", level: 95 },
-      { name: "TensorFlow/PyTorch", level: 90 },
-      { name: "Machine Learning", level: 92 },
-      { name: "Deep Learning", level: 88 },
-      { name: "Computer Vision", level: 85 },
-      { name: "NLP", level: 87 }
-    ]
-  },
-  {
     icon: Code,
-    title: "Software Development",
+    title: "Programming & Development",
     skills: [
-      { name: "TypeScript/JavaScript", level: 93 },
-      { name: "React/Next.js", level: 90 },
-      { name: "Node.js", level: 88 },
-      { name: "GraphQL/REST APIs", level: 87 },
-      { name: "Git/Version Control", level: 95 },
-      { name: "Testing (Jest/Cypress)", level: 82 }
-    ]
-  },
-  {
-    icon: Database,
-    title: "Data & Databases",
-    skills: [
-      { name: "PostgreSQL", level: 89 },
-      { name: "MongoDB", level: 85 },
-      { name: "Redis", level: 83 },
-      { name: "SQL", level: 92 },
-      { name: "Data Pipeline Design", level: 88 },
-      { name: "ETL Processes", level: 86 }
-    ]
-  },
-  {
-    icon: Cloud,
-    title: "Cloud & DevOps",
-    skills: [
-      { name: "AWS", level: 87 },
-      { name: "Docker", level: 90 },
-      { name: "Kubernetes", level: 82 },
-      { name: "CI/CD", level: 85 },
-      { name: "Terraform", level: 78 },
-      { name: "Monitoring & Logging", level: 83 }
-    ]
-  },
-  {
-    icon: Cpu,
-    title: "Technical Architecture",
-    skills: [
-      { name: "System Design", level: 89 },
-      { name: "Microservices", level: 86 },
-      { name: "API Design", level: 91 },
-      { name: "Performance Optimization", level: 87 },
-      { name: "Security Best Practices", level: 84 },
-      { name: "Scalability Planning", level: 88 }
+      { name: "JavaScript", level: 85 },
+      { name: "Java", level: 85 },
+      { name: "Python", level: 75 },
+      { name: "PHP", level: 85 },
+      { name: "C", level: 85 },
+      { name: "HTML & CSS", level: 85 },
+      { name: "SQL", level: 85 },
+      { name: "API Development", level: 85 }
     ]
   },
   {
     icon: Users,
-    title: "Leadership & Product",
+    title: "Project Management & Leadership",
     skills: [
-      { name: "Product Management", level: 88 },
-      { name: "Team Leadership", level: 90 },
-      { name: "Stakeholder Management", level: 87 },
-      { name: "Agile/Scrum", level: 92 },
-      { name: "Technical Mentoring", level: 89 },
-      { name: "Strategic Planning", level: 85 }
+      { name: "Project Management", level: 95 },
+      { name: "Prioritization", level: 95 },
+      { name: "Stakeholder Communication", level: 95 },
+      { name: "Cross-Functional Team Collaboration", level: 95 },
+      { name: "Technical Presentations", level: 95 },
+      { name: "User Acceptance Testing", level: 95 },
+      { name: "SDLC Management", level: 90 }
+    ]
+  },
+  {
+    icon: Brain,
+    title: "AI & Automation",
+    skills: [
+      { name: "AI Prompt Engineering", level: 88 },
+      { name: "GitHub Copilot", level: 85 },
+      { name: "AI Solutions Integration", level: 88 },
+      { name: "ChatGPT API", level: 90 },
+      { name: "Data Automation", level: 90 },
+      { name: "AI Model Training", level: 85 }
+    ]
+  },
+  {
+    icon: Database,
+    title: "Data & Systems",
+    skills: [
+      { name: "SQL Queries & Analysis", level: 90 },
+      { name: "Data Processing", level: 88 },
+      { name: "Data Pipeline Design", level: 90 },
+      { name: "Security Analysis", level: 90 },
+      { name: "System Design", level: 92 }
+    ]
+  },
+  {
+    icon: Cpu,
+    title: "Technical Expertise",
+    skills: [
+      { name: "Technical Documentation", level: 95 },
+      { name: "System Architecture", level: 90 },
+      { name: "Salesforce", level: 85 },
+      { name: "State Government Systems", level: 92 },
+      { name: "Medicaid/SNAP/TANF Systems", level: 90 }
+    ]
+  },
+  {
+    icon: Cloud,
+    title: "Tools & Platforms",
+    skills: [
+      { name: "AWS", level: 85 },
+      { name: "Docker", level: 88 },
+      { name: "React", level: 85 },
+      { name: "Full-Stack Development", level: 87 },
+      { name: "Git/Version Control", level: 90 }
     ]
   }
 ];
@@ -84,8 +84,9 @@ const Skills = () => {
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Technical Skills</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive expertise across the full technology stack, from AI/ML research 
-            to production deployment and team leadership.
+            Comprehensive technical and leadership skills spanning programming languages, AI integration, 
+            project management, and state government systems. Expert in stakeholder communication, 
+            SDLC management, and delivering scalable solutions for critical public services.
           </p>
         </div>
 

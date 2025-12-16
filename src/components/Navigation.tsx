@@ -61,7 +61,12 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
-            <Button variant="outline" size="sm" className="hover-glow">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="hover-glow"
+              onClick={() => window.open("/resume.pdf", "_blank")}
+            >
               <Download className="w-4 h-4 mr-2" />
               Resume
             </Button>
@@ -89,7 +94,12 @@ const Navigation = () => {
                   {item.name}
                 </button>
               ))}
-              <Button variant="outline" size="sm" className="w-fit">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="w-fit"
+                onClick={() => window.open("/resume.pdf", "_blank")}
+              >
                 <Download className="w-4 h-4 mr-2" />
                 Resume
               </Button>
