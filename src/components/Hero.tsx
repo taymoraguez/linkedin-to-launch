@@ -30,14 +30,13 @@ const Hero = () => {
               Taylor Moraguez
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground mb-6">
-              Product Manager | Solutions Consultant & System Analyst
+              Customer-facing AI & Cloud Solutions Architect
             </h2>
             <p className="text-lg max-w-2xl mx-auto text-muted-foreground leading-relaxed">
-              Product Manager with over three years of experience driving digital transformation initiatives, 
-              specializing in the integration of innovative AI solutions for state government systems. 
-              Demonstrates proficiency in project management, stakeholder communication, and technical documentation, 
-              leveraging skills in SQL, JavaScript, and automation to enhance system efficiency. 
-              Passionate about fostering strategic collaboration and advancing technological advancements to achieve impactful change.
+              Customer-facing AI & Cloud Solutions Architect with a Computer Science background and experience 
+              designing and delivering large-scale, regulated enterprise systems. Known for translating complex 
+              business and policy requirements into production-ready architectures implemented directly by 
+              engineering teams. Strong focus on AI adoption, governance, architectural tradeoffs, and stakeholder trust.
             </p>
           </div>
 

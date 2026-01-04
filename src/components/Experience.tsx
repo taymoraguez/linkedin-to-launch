@@ -6,69 +6,44 @@ const experiences = [
   {
     id: 1,
     company: "Deloitte Consulting",
-    position: "Solutions Consultant & System Analyst",
+    position: "AI & Cloud Solutions Architect / Technical Lead",
     duration: "Aug 2022 - Present",
     location: "Boston, MA",
-    description: "Product Manager with over three years of experience driving digital transformation initiatives, specializing in the integration of innovative AI solutions for state government systems. Leads AI functional initiatives, manages software development lifecycle for large-scale state benefits systems, and delivers comprehensive SaaS portals serving thousands of users.",
-    technologies: ["AI Prompt Engineering", "GitHub Copilot", "SQL", "JavaScript", "SDLC", "Project Management", "Technical Documentation", "API Development", "SaaS Development", "Data Automation", "Security Analysis", "System Design", "Medicaid", "SNAP Systems", "Stakeholder Engagement", "Technical Presentations"],
+    description: "Customer-facing AI & Cloud Solutions Architect with experience designing and delivering large-scale, regulated enterprise systems. Translating complex business and policy requirements into production-ready architectures implemented directly by engineering teams.",
+    technologies: ["AI Prompt Engineering", "System Architecture", "SQL", "JavaScript", "Java", "Python", "Salesforce", "SDLC", "Technical Documentation", "Security Analysis", "Stakeholder Communication"],
     achievements: [
-      "State account AI Lead fostering AI advancements to project management components, increasing efficiency in daily system design tasks with AI Prompt Engineering",
-      "Coordinates with project developers to implement AI solutions to daily development workflows with GitHub Copilot",
-      "Managed SDX Interface Automation for Social Security Administration: data exchange automation (400+ field inventory) for State Medicaid, SNAP, and TANF policy requirements",
-      "Product manager over Software Development Life Cycle (SDLC), managing project timelines and stakeholder engagement for 3+ teams (6+ team members)",
-      "Orchestrated cross-functional teams for successful launch of new SaaS portal (MyMaineConnection), allowing over 2000 users to seamlessly access state benefits",
-      "Streamlined eligibility data automation for Medicaid and SNAP systems, enhancing compliance and efficiency across more than 400 fields",
-      "Developed comprehensive technical documentation process to ensure clarity in system design and enhance stakeholder engagement during project approvals",
-      "Performed in-depth data analysis to identify security vulnerabilities and formulated targeted solutions to significantly improve confidentiality protocols",
-      "Issued high-priority solution from State Governor and department leadership for security prevention, aimed at improving State worker processes for confidentiality (Worker Portal Project)",
-      "Performed SQL queries for data reporting and analysis to create technical solutions",
-      "Served as liaison for system design and technical documentation, presenting design solutions to stakeholders for approval",
-      "Provided technical solution demonstrations to State Government and training teams"
-    ]
-  },
-  {
-    id: 2,
-    company: "Yappy - Independent Project",
-    position: "Creator & Lead Developer",
-    duration: "2024 - Present",
-    location: "Boston, MA",
-    description: "Founded and developed Yappy, an AI-powered emotional support chatbot system for adolescents. Built to help children express emotions through voice and text, learn emotion recognition, and receive safe, supportive guidance. Published research on Child Online Safety to inform safe design practices.",
-    technologies: ["React", "ElevenLabs API", "AI/ML", "HTML/CSS", "Emotion Recognition", "Child Safety"],
-    achievements: [
-      "Designed and built full-stack AI chatbot with voice and text capabilities",
-      "Implemented emotion detection and analysis specifically tailored for adolescents",
-      "Created safe online environment adhering to Child Online Safety best practices",
-      "Published research article on Child Online Safety to contribute to the field"
-    ]
-  },
-  {
-    id: 3,
-    company: "AI Sentiment Analysis - Hackathon Project (Sundai @ Harvard/MIT)",
-    position: "Co-Creator & Full-Stack Developer",
-    duration: "2024",
-    location: "Boston, MA",
-    description: "Created MVP with 4-person team for AI Sentiment Analysis product that tracks a person's happiness based on daily messages. Developed during hackathon at Sundai (Harvard/MIT).",
-    technologies: ["AWS", "Lovable", "Docker", "Supabase", "Full-Stack", "Sentiment Analysis", "Data Processing"],
-    achievements: [
-      "Built MVP in hackathon timeframe for Sundai @ Harvard University/MIT with 4-person team",
-      "Developed AI sentiment analysis system to track happiness levels from daily communications",
-      "Implemented secure data processing pipeline for sensitive personal communications",
-      "Created quantitative happiness insights enabling better self-awareness and mental health tracking"
-    ]
-  },
-  {
-    id: 4,
-    company: "AI Immigration Lawyer - Hackathon Project (Sundai @ Harvard/MIT)",
-    position: "Co-Creator & AI Developer",
-    duration: "2024",
-    location: "Boston, MA",
-    description: "Created MVP with 5-person team for AI Lawyer prototype designed to assist with the application process for work visas within the United States. Developed during hackathon at Sundai (Harvard/MIT).",
-    technologies: ["n8n", "Lovable", "ChatGPT API", "R", "Docker", "AI Training", "Government Data Analysis"],
-    achievements: [
-      "Created MVP hackathon project for Sundai @ Harvard University/MIT with 5-person team",
-      "Developed AI Lawyer prototype to assist with work visa application processes",
-      "Trained Generative AI model using multiple data sources (government criteria, lawyer websites, success cases)",
-      "Developed eligibility assessment system for various visa types using ChatGPT API"
+      "Served as customer-facing AI Lead for a large state account, identifying and delivering AI-driven enhancements to improve efficiency across project management and daily operational workflows",
+      "Designed and evaluated prompt engineering approaches for internal AI use cases, advising stakeholders on safe, effective, and maintainable AI adoption",
+      "Acted as a trusted technical advisor to client leadership, translating AI capabilities into concrete, production-ready solutions"
+    ],
+    subProjects: [
+      {
+        title: "SDX Interface Automation - Solutions Architect / Technical Product Owner",
+        achievements: [
+          "Owned end-to-end system architecture for eligibility data automation supporting Medicaid, SNAP, and TANF programs, streamlining compliance across 400+ data fields",
+          "Designed technical architectures and worked side-by-side with developers, conducting design and code reviews to ensure implementations matched architectural intent",
+          "Led the software development lifecycle (SDLC) across 5+ teams, coordinating technical dependencies, delivery timelines, and client stakeholders",
+          "Modernized legacy batch-processing workflows into a more current framework, requiring deep alignment between state business processes and system design",
+          "Authored and presented technical architecture documentation to client stakeholders, securing approvals and aligning teams on implementation strategy"
+        ]
+      },
+      {
+        title: "Confidentiality Security Implementation - Security Solution Architecture",
+        achievements: [
+          "Designed and delivered a high-priority security solution in response to executive-level directives from state leadership, addressing confidentiality risks in worker-facing systems",
+          "Analyzed existing data flows and operational processes to identify security gaps and define a compliant technical architecture",
+          "Presented solution design and risk mitigation strategy directly to state government leadership, supporting approval and rollout"
+        ]
+      },
+      {
+        title: "Authorized Representative Portal & IES Implementation - Customer-Facing Solutions Architect",
+        achievements: [
+          "Designed system architecture and delivery framework for a large-scale SaaS portal integrated with state eligibility platforms (Salesforce)",
+          "Orchestrated cross-functional delivery across 5+ engineering and stakeholder teams, resolving architectural dependencies during implementation",
+          "Supported the successful launch of a customer-facing portal enabling 2,000+ users to manage benefit access on behalf of others",
+          "Acted as the primary technical liaison between client stakeholders and development teams, ensuring architectural clarity while maintaining delivery velocity"
+        ]
+      }
     ]
   }
 ];
@@ -80,9 +55,9 @@ const Experience = () => {
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Professional Experience</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Product Manager with over three years of experience driving digital transformation initiatives, 
-            specializing in AI solutions for state government systems. Proven track record in managing SDLC, 
-            orchestrating cross-functional teams, and delivering innovative products that serve thousands of users.
+            Customer-facing AI & Cloud Solutions Architect with experience designing and delivering large-scale, 
+            regulated enterprise systems for state government. Strong focus on AI adoption, governance, 
+            architectural tradeoffs, and stakeholder trust.
           </p>
         </div>
 
@@ -117,7 +92,7 @@ const Experience = () => {
               </p>
 
               <div className="mb-6">
-                <h4 className="font-semibold mb-3 text-foreground">Key Achievements:</h4>
+                <h4 className="font-semibold mb-3 text-foreground">AI Solutions Architect:</h4>
                 <ul className="space-y-2">
                   {exp.achievements.map((achievement, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-muted-foreground">
@@ -127,6 +102,24 @@ const Experience = () => {
                   ))}
                 </ul>
               </div>
+
+              {exp.subProjects && (
+                <div className="mb-6 space-y-6">
+                  {exp.subProjects.map((subProject, subIdx) => (
+                    <div key={subIdx} className="border-l-2 border-primary/30 pl-4">
+                      <h4 className="font-semibold mb-3 text-foreground">{subProject.title}</h4>
+                      <ul className="space-y-2">
+                        {subProject.achievements.map((achievement, achIdx) => (
+                          <li key={achIdx} className="flex items-start gap-2 text-muted-foreground text-sm">
+                            <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0" />
+                            {achievement}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              )}
 
               <div>
                 <h4 className="font-semibold mb-3 text-foreground">Technologies & Skills:</h4>

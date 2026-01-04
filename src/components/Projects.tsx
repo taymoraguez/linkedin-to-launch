@@ -6,18 +6,17 @@ import { ExternalLink, Github, Star } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Yappy - AI Emotions Recognition",
-    description: "Built an emotional support chatbot system for adolescents to help them express themselves and learn to identify and manage their emotions",
-    technologies: ["AI", "ElevenLabs", "React", "HTML/CSS"],
+    title: "Yappy - Adolescent & Parent Emotional Recognition Companion",
+    description: "Designed and built an MVP AI companion focused on emotional recognition for adolescents, with use cases supporting parents, educators, and therapists.",
+    technologies: ["AI", "Prompt Engineering", "React", "Full-Stack"],
     features: [
-      "AI-powered emotion detection and emotional analysis for adolescents",
-      "Adolescents can express their emotions through voice and text",
-      "Adolescents can learn to express themselves through stories and emotion recognition",
-      "Adults feature to allow them to test functionlity prior to adolescent use and seek guidance for personal adolescent situations"
+      "Architected the system to augment (not replace) human support, incorporating clear scope boundaries and safety considerations",
+      "Designed prompt and interaction strategies to support age-appropriate emotional labeling, reflection, and communication",
+      "Balanced user trust, ethical considerations, and practical deployment constraints as an early-stage AI system"
     ],
     metrics: {
-      commits: "33+",
-      files: "60+",
+      focus: "Safety",
+      approach: "Ethical AI",
       stack: "Full-Stack"
     },
     links: {
@@ -27,13 +26,13 @@ const projects = [
   },
   {
     id: 2,
-    title: "AI Imigration Lawyer",
-    description: "Developed an mock imigration lawyer website to help users understand the imigration process and the requirements for different types of imigration.",
+    title: "AI Immigration Lawyer",
+    description: "Hackathon project (Sundai @ Harvard/MIT) - AI prototype to assist with work visa application processes within the United States.",
     technologies: ["n8n", "Lovable", "ChatGPT API", "R", "Docker"],
     features: [
-      "Hackathon MVP project for Sundai @ Harvard University/MIT",
-      "Trained Generative AI to use government wedsite criteria, immigration lawyer website information, and success cases to determine eligibiliy",
-      "Using ChatGPT API to generate likeihood for successful imigration application eligibility for certain visas",
+      "Trained Generative AI using government criteria, immigration lawyer information, and success cases",
+      "Built eligibility assessment system for various visa types using ChatGPT API",
+      "Developed during 12-hour hackathon with 5-person team"
     ],
     metrics: {
       team: "5 people",
@@ -47,13 +46,13 @@ const projects = [
   },
   {
     id: 3,
-    title: "Happyalyze",
-    description: "Sentiment analysis application that quantifies happiness levels from personal communication data.",
-    technologies: ["AWS", "Lovable", "HTML/CSS", "Docker", "Supabase", "Full-Stack"],
+    title: "Happyalyze - Sentiment Analysis",
+    description: "Hackathon project (Sundai @ Harvard/MIT) - Sentiment analysis application quantifying happiness levels from personal communication data.",
+    technologies: ["AWS", "Lovable", "Docker", "Supabase", "Full-Stack"],
     features: [
-      "Hackathon MVP project for Sundai @ Harvard University/MIT",
-      "The system processes messages from various sources (browser history, WhatsApp, iMessage) to generate personalized happiness metrics and insights over time.",
-      "Users can gain quantitative insights into their communication-based happiness patterns, enabling better self-awareness and mental health tracking while maintaining complete control over their personal data."
+      "Processes messages from various sources to generate personalized happiness metrics and insights over time",
+      "Enables quantitative insights into communication-based happiness patterns for self-awareness and mental health tracking",
+      "Developed during 12-hour hackathon with 4-person team"
     ],
     metrics: {
       team: "4 people",
