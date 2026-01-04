@@ -52,34 +52,33 @@ const Experience = () => {
   return (
     <section id="experience" className="section-padding">
       <div className="container mx-auto">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Professional Experience</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center mb-8 animate-fade-in">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 gradient-text">Professional Experience</h2>
+          <p className="text-base text-muted-foreground max-w-2xl mx-auto">
             Customer-facing AI & Cloud Solutions Architect with experience designing and delivering large-scale, 
-            regulated enterprise systems for state government. Strong focus on AI adoption, governance, 
-            architectural tradeoffs, and stakeholder trust.
+            regulated enterprise systems for state government.
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-6">
           {experiences.map((exp, index) => (
             <Card 
               key={exp.id} 
-              className="glass-card hover-glow p-8 animate-slide-up" 
+              className="glass-card hover-glow p-6 animate-slide-up" 
               style={{animationDelay: `${index * 0.2}s`}}
             >
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-6">
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div className="flex-1">
-                  <h3 className="text-xl md:text-2xl font-semibold text-foreground mb-2">
+                  <h3 className="text-lg md:text-xl font-semibold text-foreground mb-1">
                     {exp.position}
                   </h3>
-                  <div className="flex items-center gap-2 text-primary mb-2">
+                  <div className="flex items-center gap-2 text-primary mb-1">
                     <Building2 className="w-4 h-4" />
-                    <span className="font-medium">{exp.company}</span>
+                    <span className="font-medium text-sm">{exp.company}</span>
                   </div>
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground mb-4">
+                  <div className="flex items-center gap-4 text-xs text-muted-foreground mb-3">
                     <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
+                      <Calendar className="w-3 h-3" />
                       {exp.duration}
                     </div>
                     <span>{exp.location}</span>
@@ -87,16 +86,16 @@ const Experience = () => {
                 </div>
               </div>
 
-              <p className="text-muted-foreground mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
                 {exp.description}
               </p>
 
-              <div className="mb-6">
-                <h4 className="font-semibold mb-3 text-foreground">AI Solutions Architect:</h4>
-                <ul className="space-y-2">
+              <div className="mb-4">
+                <h4 className="font-semibold mb-2 text-foreground text-sm">AI Solutions Architect:</h4>
+                <ul className="space-y-1">
                   {exp.achievements.map((achievement, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-muted-foreground">
-                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                    <li key={idx} className="flex items-start gap-2 text-muted-foreground text-sm">
+                      <span className="w-1 h-1 bg-primary rounded-full mt-2 flex-shrink-0" />
                       {achievement}
                     </li>
                   ))}
@@ -104,14 +103,14 @@ const Experience = () => {
               </div>
 
               {exp.subProjects && (
-                <div className="mb-6 space-y-6">
+                <div className="mb-4 space-y-4">
                   {exp.subProjects.map((subProject, subIdx) => (
-                    <div key={subIdx} className="border-l-2 border-primary/30 pl-4">
-                      <h4 className="font-semibold mb-3 text-foreground">{subProject.title}</h4>
-                      <ul className="space-y-2">
+                    <div key={subIdx} className="border-l-2 border-primary/30 pl-3">
+                      <h4 className="font-semibold mb-2 text-foreground text-sm">{subProject.title}</h4>
+                      <ul className="space-y-1">
                         {subProject.achievements.map((achievement, achIdx) => (
-                          <li key={achIdx} className="flex items-start gap-2 text-muted-foreground text-sm">
-                            <span className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0" />
+                          <li key={achIdx} className="flex items-start gap-2 text-muted-foreground text-xs">
+                            <span className="w-1 h-1 bg-accent rounded-full mt-1.5 flex-shrink-0" />
                             {achievement}
                           </li>
                         ))}
@@ -122,10 +121,10 @@ const Experience = () => {
               )}
 
               <div>
-                <h4 className="font-semibold mb-3 text-foreground">Technologies & Skills:</h4>
-                <div className="flex flex-wrap gap-2">
+                <h4 className="font-semibold mb-2 text-foreground text-sm">Technologies & Skills:</h4>
+                <div className="flex flex-wrap gap-1.5">
                   {exp.technologies.map((tech, idx) => (
-                    <Badge key={idx} variant="secondary" className="hover:bg-primary hover:text-primary-foreground transition-colors">
+                    <Badge key={idx} variant="secondary" className="text-xs hover:bg-primary hover:text-primary-foreground transition-colors">
                       {tech}
                     </Badge>
                   ))}

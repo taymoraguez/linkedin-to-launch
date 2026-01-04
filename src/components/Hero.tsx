@@ -4,10 +4,10 @@ import profileImage from "@/assets/profile-hero.jpg";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-[85vh] flex items-center justify-center relative overflow-hidden pt-16">
       {/* Background gradient */}
       <div 
-        className="absolute inset-0 opacity-20"
+        className="absolute inset-0 opacity-10"
         style={{
           background: 'var(--gradient-primary)',
         }}
@@ -15,9 +15,9 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center animate-fade-in">
-          <div className="mb-8">
+          <div className="mb-6">
             {/* Profile Image */}
-            <div className="w-32 h-32 mx-auto mb-6 relative">
+            <div className="w-28 h-28 mx-auto mb-5 relative">
               <img 
                 src="/prof-photo.jfif"
                 alt="Taylor Moraguez - AI & Technical Product Consultant"
@@ -26,10 +26,10 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-accent/20" />
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-bold mb-4 gradient-text">
+            <h1 className="text-4xl md:text-6xl font-bold mb-3 gradient-text">
               Taylor Moraguez
             </h1>
-            <h2 className="text-xl md:text-2xl text-muted-foreground mb-6">
+            <h2 className="text-lg md:text-xl text-muted-foreground mb-4">
               Customer-facing AI & Cloud Solutions Architect
             </h2>
             <p className="text-lg max-w-2xl mx-auto text-muted-foreground leading-relaxed">
@@ -40,7 +40,7 @@ const Hero = () => {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center mb-6">
             <Button 
               size="lg" 
               className="hover-glow"
@@ -60,7 +60,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className="flex gap-6 justify-center">
+          <div className="flex gap-5 justify-center">
             <a 
               href="https://linkedin.com/in/taylor-moraguez" 
               target="_blank" 
@@ -81,9 +81,9 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Floating elements */}
-      <div className="absolute top-1/4 left-10 w-20 h-20 rounded-full bg-primary/10 animate-glow" />
-      <div className="absolute bottom-1/4 right-10 w-32 h-32 rounded-full bg-accent/10 animate-glow" style={{animationDelay: '1s'}} />
+      {/* Floating elements - reduced visibility */}
+      <div className="absolute top-1/4 left-10 w-16 h-16 rounded-full bg-primary/5 animate-glow" />
+      <div className="absolute bottom-1/4 right-10 w-24 h-24 rounded-full bg-accent/5 animate-glow" style={{animationDelay: '1s'}} />
     </section>
   );
 };

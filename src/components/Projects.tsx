@@ -70,59 +70,57 @@ const Projects = () => {
   return (
     <section id="projects" className="section-padding">
       <div className="container mx-auto">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Featured Projects</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Showcasing innovative solutions that demonstrate expertise in AI/ML, 
-            full-stack development, and scalable system architecture.
+        <div className="text-center mb-8 animate-fade-in">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 gradient-text">Featured Projects</h2>
+          <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+            Innovative AI/ML solutions demonstrating full-stack development and scalable architecture.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5">
           {projects.map((project, index) => (
             <Card 
               key={project.id} 
-              className="glass-card hover-glow p-6 flex flex-col animate-slide-up"
+              className="glass-card hover-glow p-5 flex flex-col animate-slide-up"
               style={{animationDelay: `${index * 0.2}s`}}
             >
               <div className="flex-1">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-semibold text-foreground">{project.title}</h3>
-                  <Star className="w-5 h-5 text-accent fill-current" />
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="text-base font-semibold text-foreground leading-tight">{project.title}</h3>
+                  <Star className="w-4 h-4 text-accent fill-current flex-shrink-0" />
                 </div>
 
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
                   {project.description}
                 </p>
 
-                <div className="mb-6">
-                  <h4 className="font-semibold mb-3 text-foreground">Key Features:</h4>
-                  <ul className="space-y-2">
+                <div className="mb-4">
+                  <h4 className="font-semibold mb-2 text-foreground text-xs uppercase tracking-wide text-muted-foreground">Key Features</h4>
+                  <ul className="space-y-1">
                     {project.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
-                        <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0" />
+                      <li key={idx} className="flex items-start gap-2 text-xs text-muted-foreground">
+                        <span className="w-1 h-1 bg-primary rounded-full mt-1.5 flex-shrink-0" />
                         {feature}
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="mb-6">
-                  <h4 className="font-semibold mb-3 text-foreground">Impact Metrics:</h4>
-                  <div className="grid grid-cols-3 gap-2 text-center">
+                <div className="mb-4">
+                  <div className="grid grid-cols-3 gap-1.5 text-center">
                     {Object.entries(project.metrics).map(([key, value]) => (
-                      <div key={key} className="p-2 bg-primary/5 rounded-lg">
-                        <div className="text-sm font-semibold text-primary">{value}</div>
-                        <div className="text-xs text-muted-foreground capitalize">{key}</div>
+                      <div key={key} className="p-1.5 bg-primary/5 rounded-md">
+                        <div className="text-xs font-semibold text-primary">{value}</div>
+                        <div className="text-[10px] text-muted-foreground capitalize">{key}</div>
                       </div>
                     ))}
                   </div>
                 </div>
 
-                <div className="mb-6">
-                  <div className="flex flex-wrap gap-2">
+                <div className="mb-4">
+                  <div className="flex flex-wrap gap-1.5">
                     {project.technologies.map((tech, idx) => (
-                      <Badge key={idx} variant="outline" className="text-xs">
+                      <Badge key={idx} variant="outline" className="text-[10px] px-2 py-0.5">
                         {tech}
                       </Badge>
                     ))}
@@ -130,25 +128,25 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div className="flex gap-2 pt-4 border-t border-border">
+              <div className="flex gap-2 pt-3 border-t border-border">
                 {project.links.demo && project.links.demo !== "#" && (
                   <Button 
                     variant="outline" 
                     size="sm" 
-                    className="flex-1"
+                    className="flex-1 text-xs h-8"
                     onClick={() => window.open(project.links.demo, '_blank')}
                   >
-                    <ExternalLink className="w-4 h-4 mr-2" />
+                    <ExternalLink className="w-3 h-3 mr-1.5" />
                     Demo
                   </Button>
                 )}
                 <Button 
                   variant="outline" 
                   size="sm" 
-                  className="flex-1"
+                  className="flex-1 text-xs h-8"
                   onClick={() => window.open(project.links.github, '_blank')}
                 >
-                  <Github className="w-4 h-4 mr-2" />
+                  <Github className="w-3 h-3 mr-1.5" />
                   Code
                 </Button>
               </div>
