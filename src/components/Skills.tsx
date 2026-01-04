@@ -70,43 +70,42 @@ const skillCategories = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="section-padding bg-muted/30">
+    <section id="skills" className="section-padding bg-muted/20">
       <div className="container mx-auto">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 gradient-text">Technical Skills</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive technical and leadership skills spanning programming languages, AI integration, 
-            project management, and state government systems. Expert in stakeholder communication, 
-            SDLC management, and delivering scalable solutions for critical public services.
+        <div className="text-center mb-8 animate-fade-in">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3 gradient-text">Technical Skills</h2>
+          <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+            Comprehensive technical and leadership skills spanning programming, AI integration, 
+            and state government systems.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {skillCategories.map((category, categoryIndex) => {
             const IconComponent = category.icon;
             return (
               <Card 
                 key={category.title} 
-                className="glass-card hover-glow p-6 animate-slide-up"
+                className="glass-card hover-glow p-4 animate-slide-up"
                 style={{animationDelay: `${categoryIndex * 0.1}s`}}
               >
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="p-2 rounded-lg bg-primary/10">
-                    <IconComponent className="w-6 h-6 text-primary" />
+                <div className="flex items-center gap-2 mb-4">
+                  <div className="p-1.5 rounded-lg bg-primary/10">
+                    <IconComponent className="w-4 h-4 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-lg text-foreground">{category.title}</h3>
+                  <h3 className="font-semibold text-sm text-foreground">{category.title}</h3>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-2.5">
                   {category.skills.map((skill, skillIndex) => (
-                    <div key={skill.name} className="space-y-2">
+                    <div key={skill.name} className="space-y-1">
                       <div className="flex justify-between items-center">
-                        <span className="text-sm font-medium text-foreground">{skill.name}</span>
+                        <span className="text-xs font-medium text-foreground">{skill.name}</span>
                         <span className="text-xs text-muted-foreground">{skill.level}%</span>
                       </div>
                       <Progress 
                         value={skill.level} 
-                        className="h-2"
+                        className="h-1.5"
                         style={{
                           animationDelay: `${(categoryIndex * 0.1) + (skillIndex * 0.05)}s`
                         }}
