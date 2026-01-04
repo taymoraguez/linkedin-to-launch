@@ -7,72 +7,63 @@ const skillCategories = [
     icon: Code,
     title: "Programming & Development",
     skills: [
-      { name: "JavaScript", level: 85 },
-      { name: "Java", level: 85 },
-      { name: "Python", level: 75 },
-      { name: "PHP", level: 85 },
+      { name: "Java", level: 90 },
+      { name: "JavaScript", level: 90 },
+      { name: "Python", level: 85 },
       { name: "C", level: 85 },
-      { name: "HTML & CSS", level: 85 },
-      { name: "SQL", level: 85 },
-      { name: "API Development", level: 85 }
+      { name: "HTML & CSS", level: 90 },
+      { name: "SQL", level: 90 }
     ]
   },
   {
     icon: Users,
-    title: "Project Management & Leadership",
+    title: "Architecture & Leadership",
     skills: [
-      { name: "Project Management", level: 95 },
-      { name: "Prioritization", level: 95 },
+      { name: "Solutions Architecture", level: 95 },
       { name: "Stakeholder Communication", level: 95 },
-      { name: "Cross-Functional Team Collaboration", level: 95 },
-      { name: "Technical Presentations", level: 95 },
-      { name: "User Acceptance Testing", level: 95 },
-      { name: "SDLC Management", level: 90 }
+      { name: "Technical Documentation", level: 95 },
+      { name: "Cross-Functional Delivery", level: 95 },
+      { name: "SDLC Management", level: 92 }
     ]
   },
   {
     icon: Brain,
-    title: "AI & Automation",
+    title: "AI & Cloud",
     skills: [
-      { name: "AI Prompt Engineering", level: 88 },
-      { name: "GitHub Copilot", level: 85 },
-      { name: "AI Solutions Integration", level: 88 },
-      { name: "ChatGPT API", level: 90 },
-      { name: "Data Automation", level: 90 },
-      { name: "AI Model Training", level: 85 }
+      { name: "AI Prompt Engineering", level: 92 },
+      { name: "AI Adoption Strategy", level: 90 },
+      { name: "AI Governance", level: 88 },
+      { name: "Cloud Architecture", level: 88 }
     ]
   },
   {
     icon: Database,
     title: "Data & Systems",
     skills: [
-      { name: "SQL Queries & Analysis", level: 90 },
-      { name: "Data Processing", level: 88 },
+      { name: "System Design", level: 95 },
       { name: "Data Pipeline Design", level: 90 },
-      { name: "Security Analysis", level: 90 },
-      { name: "System Design", level: 92 }
+      { name: "Security Architecture", level: 90 },
+      { name: "Enterprise Integration", level: 92 }
     ]
   },
   {
     icon: Cpu,
-    title: "Technical Expertise",
+    title: "Domain Expertise",
     skills: [
-      { name: "Technical Documentation", level: 95 },
-      { name: "System Architecture", level: 90 },
-      { name: "Salesforce", level: 85 },
-      { name: "State Government Systems", level: 92 },
-      { name: "Medicaid/SNAP/TANF Systems", level: 90 }
+      { name: "State Government Systems", level: 95 },
+      { name: "Medicaid/SNAP/TANF", level: 92 },
+      { name: "Salesforce", level: 88 },
+      { name: "Regulatory Compliance", level: 90 }
     ]
   },
   {
     icon: Cloud,
-    title: "Tools & Platforms",
+    title: "Tools & Methodologies",
     skills: [
-      { name: "AWS", level: 85 },
-      { name: "Docker", level: 88 },
-      { name: "React", level: 85 },
-      { name: "Full-Stack Development", level: 87 },
-      { name: "Git/Version Control", level: 90 }
+      { name: "Agile Methodologies", level: 92 },
+      { name: "Jira", level: 90 },
+      { name: "Code Reviews", level: 90 },
+      { name: "Architecture Documentation", level: 95 }
     ]
   }
 ];
