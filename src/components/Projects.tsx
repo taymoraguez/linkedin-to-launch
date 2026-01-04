@@ -20,7 +20,7 @@ const projects = [
       stack: "Full-Stack"
     },
     links: {
-      demo: "#",
+      demo: "https://medium.com/@tay.moraguez/introducing-yappy-your-ai-emotional-companion-for-children-and-parents-0fc1e91dbleware",
       github: "https://github.com/taymoraguez/yappy-emotions-lab"
     }
   },
