@@ -48,6 +48,23 @@ const experiences = [
   },
   {
     id: 2,
+    company: "Deloitte",
+    position: "Consulting Summer Scholar (Intern)",
+    duration: "Jun 2021 - Jul 2021",
+    location: "California, United States (Remote)",
+    description: "High-performing intern on the Quality Assurance team for a State web development project. Demonstrated strong technical aptitude and collaboration skills, resulting in a full-time offer upon completion.",
+    technologies: ["AWS Lambda", "Jira", "System Testing", "QA", "Web Development", "Defect Tracking", "Test Scenario Development", "Cross-functional Collaboration"],
+    achievements: [
+      "Contributed as a System Tester on the Quality Assurance team for a web development project for a State account",
+      "Developed and executed test scenarios for system integration testing, ensuring functional requirements were met",
+      "Communicated defects and resolutions effectively to developers, enhancing cross-team collaboration",
+      "Gained foundational skills in customer-centric web development and mastered tools like AWS Lambda and Jira",
+      "Performance during internship resulted in a full-time offer as AI & Cloud Solutions Architect"
+    ],
+    subProjects: []
+  },
+  {
+    id: 3,
     company: "iD Tech Camps",
     position: "Virtual Instructor",
     duration: "Apr 2020 - Aug 2020",
@@ -108,7 +125,7 @@ const Experience = () => {
               </p>
 
               <div className="mb-4">
-                <h4 className="font-semibold mb-2 text-foreground text-sm">AI Solutions Architect:</h4>
+                <h4 className="font-semibold mb-2 text-foreground text-sm">Key Achievements:</h4>
                 <ul className="space-y-1">
                   {exp.achievements.map((achievement, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-muted-foreground text-sm">
