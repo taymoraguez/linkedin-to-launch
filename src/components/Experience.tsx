@@ -45,6 +45,23 @@ const experiences = [
         ]
       }
     ]
+  },
+  {
+    id: 2,
+    company: "iD Tech Camps",
+    position: "Virtual Instructor",
+    duration: "Apr 2020 - Aug 2020",
+    location: "Miami, FL (Remote)",
+    description: "Virtual STEM educator at the world's leading tech education company, delivering live online coding and game design instruction during the COVID-19 pandemic. iD Tech pioneered virtual tech camps in 2020 to meet unprecedented demand for distance learning, serving students globally across all time zones.",
+    technologies: ["Roblox Studio", "Minecraft Education", "Scratch", "Python", "Game Design", "Virtual Instruction", "Curriculum Development", "Student Engagement"],
+    achievements: [
+      "Instructed diverse groups of students aged 6-13 in technology fundamentals, game design, and programming using platforms like Roblox and Minecraft",
+      "Simplified complex coding concepts into accessible language, enhancing understanding for first-time learners through live collaborative virtual sessions",
+      "Fostered a positive and engaging online learning environment, encouraging creativity and collaboration among students during remote instruction",
+      "Adapted quickly to virtual teaching methodologies as iD Tech expanded online offerings to accommodate global demand during the pandemic",
+      "Delivered personalized instruction in small-group settings, ensuring each student received individualized attention and support"
+    ],
+    subProjects: []
   }
 ];
 
